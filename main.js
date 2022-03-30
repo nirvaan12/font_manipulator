@@ -3,7 +3,7 @@ function setup(){
     video.size(550,500);
 canvas= createCanvas(550,480);
     canvas.position();
-poseNet= ml5.poseNet(video,modalLoaded);
+poseNet= ml5.poseNet(video,modelLoaded);
     poseNet.on("pose",gotPose);
 }
 function modelLoaded(){
